@@ -96,7 +96,7 @@ case "$stack" in
       libxtst6
       fonts-liberation
       libdrm2
-      libgbm
+      libgbm1
     "
     ;;
   *)
