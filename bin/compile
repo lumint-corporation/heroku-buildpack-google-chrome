@@ -95,6 +95,7 @@ case "$stack" in
       libxss1
       libxtst6
       fonts-liberation
+      libdrm2
     "
     ;;
   *)
