@@ -135,7 +135,7 @@ for PACKAGE in $PACKAGES; do
   fi
 done
 
-aws s3api get-object --bucket $ENV_DIR/S3_BUCKET_URL --key chrome/google-chrome-stable_${chrome_version}.deb $APT_CACHE_DIR/archives/ --region $ENV_DIR/S3_REGION
+aws s3api get-object --bucket $ENV_DIR/S3_LUMINT_UTILS_BUCKET_NAME --key chrome/google-chrome-stable_${chrome_version}.deb $APT_CACHE_DIR/archives/ --region $ENV_DIR/S3_REGION
 
 mkdir -p $BUILD_DIR/.apt
 
