@@ -138,6 +138,9 @@ done
 S3_LUMINT_UTILS_BUCKET_NAME=$(cat $ENV_DIR/S3_LUMINT_UTILS_BUCKET_NAME)
 S3_REGION=$(cat $ENV_DIR/S3_REGION)
 
+AWS_ACCESS_KEY_ID=$(cat $ENV_DIR/AWS_ACCESS_KEY_ID)
+AWS_SECRET_ACCESS_KEY=$(cat $ENV_DIR/AWS_SECRET_ACCESS_KEY)
+
 aws s3api get-object --bucket $S3_LUMINT_UTILS_BUCKET_NAME --key chrome/google-chrome-stable_${chrome_version}.deb $APT_CACHE_DIR/archives/ --region $S3_REGION
 
 mkdir -p $BUILD_DIR/.apt
